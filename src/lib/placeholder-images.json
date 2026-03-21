@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "Children coloring biblical scenes",
+      "imageUrl": "https://picsum.photos/seed/kids-coloring/1200/800",
+      "imageHint": "kids coloring"
+    },
+    {
+      "id": "noah-ark",
+      "description": "Noah's Ark coloring book cover",
+      "imageUrl": "https://picsum.photos/seed/noah/400/500",
+      "imageHint": "noahs ark"
+    },
+    {
+      "id": "david-goliath",
+      "description": "David and Goliath coloring book cover",
+      "imageUrl": "https://picsum.photos/seed/david/400/500",
+      "imageHint": "david goliath"
+    },
+    {
+      "id": "creation",
+      "description": "Creation of the world coloring book cover",
+      "imageUrl": "https://picsum.photos/seed/creation/400/500",
+      "imageHint": "creation world"
+    },
+    {
+      "id": "easter",
+      "description": "Christian Easter coloring book cover",
+      "imageUrl": "https://picsum.photos/seed/easter/400/500",
+      "imageHint": "christian easter"
+    },
+    {
+      "id": "moses",
+      "description": "Moses coloring book cover",
+      "imageUrl": "https://picsum.photos/seed/moses/400/500",
+      "imageHint": "moses biblical"
+    },
+    {
+      "id": "jonah",
+      "description": "Jonah and the whale coloring book cover",
+      "imageUrl": "https://picsum.photos/seed/jonah/400/500",
+      "imageHint": "jonah whale"
+    }
+  ]
 }
