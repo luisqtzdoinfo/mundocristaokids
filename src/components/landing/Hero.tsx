@@ -57,7 +57,7 @@ export const Hero = () => {
                 src={heroImg?.imageUrl || ''} 
                 alt={heroImg?.description || ''}
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 data-ai-hint={heroImg?.imageHint}
               />
             </div>
