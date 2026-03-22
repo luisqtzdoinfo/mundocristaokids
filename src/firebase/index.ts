@@ -11,7 +11,13 @@ export function initializeFirebase(): {
   auth: Auth;
   firestore: Firestore;
 } {
-  const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
+  // Use a fallback config if actual keys are missing to prevent crash during initial dev setup
+  const isConfigValid = firebaseConfig.apiKey && firebaseConfig.apiKey !== "placeholder-key";
+  
+  const app = getApps().length === 0 
+    ? initializeApp(isConfigValid ? firebaseConfig : { apiKey: "fake-key-for-dev", projectId: "fake-project-id" }) 
+    : getApp();
+    
   const auth = getAuth(app);
   const firestore = getFirestore(app);
 
