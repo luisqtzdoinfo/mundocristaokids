@@ -18,6 +18,7 @@ export const Testimonials = () => {
   const anaAvatar = PlaceHolderImages.find(img => img.id === 'ana-souza-avatar');
   const marianaAvatar = PlaceHolderImages.find(img => img.id === 'mariana-costa-avatar');
   const ludyanyAvatar = PlaceHolderImages.find(img => img.id === 'ludyany-guimaraes-avatar');
+  const lucianaAvatar = PlaceHolderImages.find(img => img.id === 'luciana-avatar');
 
   return (
     <section className="py-20 bg-primary/5 overflow-hidden">
@@ -44,6 +45,8 @@ export const Testimonials = () => {
                 avatarSrc = marianaAvatar?.imageUrl || avatarSrc;
               } else if (review.name === 'Ludyany Guimarães') {
                 avatarSrc = ludyanyAvatar?.imageUrl || avatarSrc;
+              } else if (review.name === 'Luciana') {
+                avatarSrc = lucianaAvatar?.imageUrl || avatarSrc;
               }
 
               return (
