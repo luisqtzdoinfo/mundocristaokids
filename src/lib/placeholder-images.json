@@ -2,21 +2,21 @@
   "placeholderImages": [
     {
       "id": "hero-image",
-      "description": "Ilustração de crianças lendo a bíblia",
-      "imageUrl": "https://picsum.photos/seed/bible-kids/800/600",
-      "imageHint": "kids bible"
+      "description": "Ilustração principal Mundo Cristão Kids",
+      "imageUrl": "https://i.postimg.cc/FFL9DqY4/1.webp",
+      "imageHint": "christian kids"
     },
     {
       "id": "logo-image",
-      "description": "Ícone Mundo Cristão Kids",
-      "imageUrl": "https://picsum.photos/seed/church-logo/100/100",
+      "description": "Logotipo Mundo Cristão Kids",
+      "imageUrl": "https://i.postimg.cc/FFL9DqY4/1.webp",
       "imageHint": "christian logo"
     },
     {
       "id": "sara-pereira-avatar",
       "description": "Foto da cliente Sara Pereira",
       "imageUrl": "https://i.postimg.cc/ncbcKM5n/pexels-vitor-aranda-880716-2314410.jpg",
-      "imageHint": "happy woman"
+      "imageHint": "happy child"
     },
     {
       "id": "noah-ark",
