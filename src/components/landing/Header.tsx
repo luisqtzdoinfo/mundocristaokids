@@ -23,7 +23,6 @@ export const Header = () => {
                 className="fill-primary stroke-white stroke-[1]"
                 strokeLinejoin="round"
               />
-              <circle cx="17.5" cy="7.5" r="1.2" fill="white" className="animate-pulse" />
             </svg>
           </div>
           <span className="text-xl font-headline font-bold text-primary">Mundo Cristão Kids</span>

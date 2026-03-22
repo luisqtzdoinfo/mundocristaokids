@@ -24,7 +24,6 @@ export const Footer = () => {
                     className="fill-primary stroke-white stroke-[1]"
                     strokeLinejoin="round"
                   />
-                  <circle cx="17.5" cy="7.5" r="1.2" fill="white" className="opacity-90" />
                 </svg>
               </div>
               <span className="text-2xl font-headline font-bold">Mundo Cristão Kids</span>
