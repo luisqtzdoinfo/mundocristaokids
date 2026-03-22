@@ -1,9 +1,9 @@
-
 "use client";
 
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const reviews = [
   { name: 'Sara Pereira', text: 'Meus filhos amam! As ilustrações são lindas e os versículos ajudam muito no aprendizado.', rating: 5 },
@@ -14,6 +14,8 @@ const reviews = [
 ];
 
 export const Testimonials = () => {
+  const saraAvatar = PlaceHolderImages.find(img => img.id === 'sara-pereira-avatar');
+
   return (
     <section className="py-20 bg-primary/5 overflow-hidden">
       <div className="container mx-auto px-4">
@@ -28,24 +30,30 @@ export const Testimonials = () => {
 
         <div className="relative">
           <div className="flex gap-6 animate-scroll md:animate-none md:grid md:grid-cols-3">
-            {reviews.map((review, i) => (
-              <div key={i} className="min-w-[300px] bg-white p-8 rounded-2xl shadow-sm border border-primary/5 relative">
-                <Quote className="absolute top-4 right-4 text-primary/10 w-12 h-12" />
-                <div className="flex gap-1 mb-4">
-                  {[...Array(review.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-500 text-yellow-500" />
-                  ))}
+            {reviews.map((review, i) => {
+              const avatarSrc = review.name === 'Sara Pereira' 
+                ? saraAvatar?.imageUrl 
+                : `https://api.dicebear.com/7.x/avataaars/svg?seed=${review.name}`;
+
+              return (
+                <div key={i} className="min-w-[300px] bg-white p-8 rounded-2xl shadow-sm border border-primary/5 relative">
+                  <Quote className="absolute top-4 right-4 text-primary/10 w-12 h-12" />
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-yellow-500 text-yellow-500" />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground mb-6 italic">"{review.text}"</p>
+                  <div className="flex items-center gap-3">
+                    <Avatar>
+                      <AvatarImage src={avatarSrc} alt={review.name} className="object-cover" />
+                      <AvatarFallback>{review.name[0]}</AvatarFallback>
+                    </Avatar>
+                    <span className="font-bold">{review.name}</span>
+                  </div>
                 </div>
-                <p className="text-muted-foreground mb-6 italic">"{review.text}"</p>
-                <div className="flex items-center gap-3">
-                  <Avatar>
-                    <AvatarImage src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${review.name}`} />
-                    <AvatarFallback>{review.name[0]}</AvatarFallback>
-                  </Avatar>
-                  <span className="font-bold">{review.name}</span>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

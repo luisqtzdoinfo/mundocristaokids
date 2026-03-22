@@ -2,15 +2,21 @@
   "placeholderImages": [
     {
       "id": "hero-image",
-      "description": "Crianças felizes e aprendizado cristão",
-      "imageUrl": "https://i.postimg.cc/ncbcKM5n/pexels-vitor-aranda-880716-2314410.jpg",
-      "imageHint": "happy child"
+      "description": "Ilustração de crianças lendo a bíblia",
+      "imageUrl": "https://picsum.photos/seed/bible-kids/800/600",
+      "imageHint": "kids bible"
     },
     {
       "id": "logo-image",
-      "description": "Logo Mundo Cristão Kids",
+      "description": "Ícone Mundo Cristão Kids",
+      "imageUrl": "https://picsum.photos/seed/church-logo/100/100",
+      "imageHint": "christian logo"
+    },
+    {
+      "id": "sara-pereira-avatar",
+      "description": "Foto da cliente Sara Pereira",
       "imageUrl": "https://i.postimg.cc/ncbcKM5n/pexels-vitor-aranda-880716-2314410.jpg",
-      "imageHint": "happy child"
+      "imageHint": "happy woman"
     },
     {
       "id": "noah-ark",
