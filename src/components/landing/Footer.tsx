@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -15,7 +14,7 @@ export const Footer = () => {
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
                 <Sparkles className="text-primary w-6 h-6" />
               </div>
-              <span className="text-2xl font-headline font-bold">Luz do Céu Kids</span>
+              <span className="text-2xl font-headline font-bold">Mundo Cristão Kids</span>
             </Link>
             <p className="text-white/80 leading-relaxed">
               Educação cristã com amor e diversão para suas crianças. Fortalecendo a fé através da arte e criatividade.
@@ -50,7 +49,7 @@ export const Footer = () => {
                 <MessageCircle className="w-5 h-5 text-secondary" />
                 <Link href="https://wa.me/5500000000000" className="hover:text-secondary transition-colors">WhatsApp Suporte</Link>
               </li>
-              <li>E-mail: suporte@luzdoceukids.com.br</li>
+              <li>E-mail: suporte@mundocristãokids.com.br</li>
               <li>Segunda a Sexta, 09h às 18h</li>
             </ul>
           </div>
@@ -72,7 +71,7 @@ export const Footer = () => {
         </div>
 
         <div className="pt-12 border-t border-white/10 text-center text-sm text-white/60">
-          <p>© 2026 Luz do Céu Kids. Todos os direitos reservados. Desenvolvido com ❤️ para famílias cristãs.</p>
+          <p>© 2026 Mundo Cristão Kids. Todos os direitos reservados. Desenvolvido com ❤️ para famílias cristãs.</p>
         </div>
       </div>
     </footer>

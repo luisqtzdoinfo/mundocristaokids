@@ -16,7 +16,7 @@ const alegreya = Alegreya({
 });
 
 export const metadata: Metadata = {
-  title: 'Luz do Céu Kids - 35 Livros de Colorir Cristãos',
+  title: 'Mundo Cristão Kids - 35 Livros de Colorir Cristãos',
   description: 'Transforme momentos especiais com sua família, célula e escola dominical com nossos livros de colorir cristãos.',
 };
 

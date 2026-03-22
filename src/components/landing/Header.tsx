@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -14,7 +13,7 @@ export const Header = () => {
           <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
             <Sparkles className="text-white w-6 h-6" />
           </div>
-          <span className="text-xl font-headline font-bold text-primary">Luz do Céu Kids</span>
+          <span className="text-xl font-headline font-bold text-primary">Mundo Cristão Kids</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           <Link href="#ofertas" className="text-sm font-medium hover:text-primary transition-colors">Ofertas</Link>

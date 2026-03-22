@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -21,7 +20,7 @@ export const FAQ = () => {
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl md:text-5xl font-headline font-bold">Dúvidas Frequentes</h2>
-          <p className="text-lg text-muted-foreground">Tudo o que você precisa saber sobre o Luz do Céu Kids</p>
+          <p className="text-lg text-muted-foreground">Tudo o que você precisa saber sobre o Mundo Cristão Kids</p>
         </div>
 
         <Accordion type="single" collapsible className="w-full">
