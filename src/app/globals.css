@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -34,13 +35,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
-
-@keyframes scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(calc(-100% - 1.5rem)); }
-}
-
-.animate-scroll {
-  animation: scroll 30s linear infinite;
 }

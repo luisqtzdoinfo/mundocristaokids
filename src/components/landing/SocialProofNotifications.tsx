@@ -1,7 +1,7 @@
 
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { CheckCircle2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -35,12 +35,15 @@ interface NotificationData {
 export const SocialProofNotifications = () => {
   const [notification, setNotification] = useState<NotificationData | null>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const isMounted = useRef(false);
 
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout;
-
+    isMounted.current = true;
+    
     const showNextNotification = () => {
-      // Gerar dados aleatórios
+      if (!isMounted.current) return;
+
       const name = NAMES[Math.floor(Math.random() * NAMES.length)];
       const action = ACTIONS[Math.floor(Math.random() * ACTIONS.length)];
       const product = PRODUCTS[Math.floor(Math.random() * PRODUCTS.length)];
@@ -52,22 +55,23 @@ export const SocialProofNotifications = () => {
       
       setIsVisible(true);
 
-      // Tempo visível: 3 a 5 segundos
       const visibleTime = Math.floor(Math.random() * (5000 - 3000 + 1)) + 3000;
       
-      setTimeout(() => {
+      timeoutRef.current = setTimeout(() => {
+        if (!isMounted.current) return;
         setIsVisible(false);
         
-        // Intervalo para a próxima: 5 a 12 segundos
         const nextInterval = Math.floor(Math.random() * (12000 - 5000 + 1)) + 5000;
-        timeoutId = setTimeout(showNextNotification, nextInterval);
+        timeoutRef.current = setTimeout(showNextNotification, nextInterval);
       }, visibleTime);
     };
 
-    // Iniciar após um pequeno delay inicial
-    timeoutId = setTimeout(showNextNotification, 3000);
+    timeoutRef.current = setTimeout(showNextNotification, 3000);
 
-    return () => clearTimeout(timeoutId);
+    return () => {
+      isMounted.current = false;
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
   }, []);
 
   if (!notification) return null;
