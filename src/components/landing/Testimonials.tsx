@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -17,6 +16,7 @@ const reviews = [
 export const Testimonials = () => {
   const saraAvatar = PlaceHolderImages.find(img => img.id === 'sara-pereira-avatar');
   const anaAvatar = PlaceHolderImages.find(img => img.id === 'ana-souza-avatar');
+  const marianaAvatar = PlaceHolderImages.find(img => img.id === 'mariana-costa-avatar');
 
   return (
     <section className="py-20 bg-primary/5 overflow-hidden">
@@ -39,6 +39,8 @@ export const Testimonials = () => {
                 avatarSrc = saraAvatar?.imageUrl || avatarSrc;
               } else if (review.name === 'Ana Souza') {
                 avatarSrc = anaAvatar?.imageUrl || avatarSrc;
+              } else if (review.name === 'Mariana Costa') {
+                avatarSrc = marianaAvatar?.imageUrl || avatarSrc;
               }
 
               return (
