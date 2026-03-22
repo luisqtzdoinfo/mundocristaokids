@@ -1,6 +1,19 @@
-
 import type {Metadata} from 'next';
+import { Inter, Alegreya } from 'next/font/google';
 import './globals.css';
+import { Toaster } from '@/components/ui/toaster';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+});
+
+const alegreya = Alegreya({
+  subsets: ['latin'],
+  variable: '--font-alegreya',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Luz do Céu Kids - 35 Livros de Colorir Cristãos',
@@ -13,13 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-      </head>
-      <body className="font-body antialiased selection:bg-accent/30">{children}</body>
+    <html lang="pt-BR" className={`${inter.variable} ${alegreya.variable}`}>
+      <body className="font-body antialiased selection:bg-accent/30">
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }
