@@ -5,7 +5,6 @@ import { Header } from '@/components/landing/Header';
 import { Hero } from '@/components/landing/Hero';
 import { BookShowcase } from '@/components/landing/BookShowcase';
 import { Benefits } from '@/components/landing/Benefits';
-import { AIPromptTool } from '@/components/landing/AIPromptTool';
 import { Testimonials } from '@/components/landing/Testimonials';
 import { Pricing } from '@/components/landing/Pricing';
 import { FAQ } from '@/components/landing/FAQ';
@@ -23,7 +22,6 @@ export default function LandingPage() {
         <BookShowcase />
         <Benefits />
         <WhereToUse />
-        <AIPromptTool />
         <Testimonials />
         <Pricing />
         <FAQ />
