@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -15,6 +16,7 @@ const reviews = [
 
 export const Testimonials = () => {
   const saraAvatar = PlaceHolderImages.find(img => img.id === 'sara-pereira-avatar');
+  const anaAvatar = PlaceHolderImages.find(img => img.id === 'ana-souza-avatar');
 
   return (
     <section className="py-20 bg-primary/5 overflow-hidden">
@@ -31,9 +33,13 @@ export const Testimonials = () => {
         <div className="relative">
           <div className="flex gap-6 animate-scroll md:animate-none md:grid md:grid-cols-3">
             {reviews.map((review, i) => {
-              const avatarSrc = review.name === 'Sara Pereira' 
-                ? saraAvatar?.imageUrl 
-                : `https://api.dicebear.com/7.x/avataaars/svg?seed=${review.name}`;
+              let avatarSrc = `https://api.dicebear.com/7.x/avataaars/svg?seed=${review.name}`;
+              
+              if (review.name === 'Sara Pereira') {
+                avatarSrc = saraAvatar?.imageUrl || avatarSrc;
+              } else if (review.name === 'Ana Souza') {
+                avatarSrc = anaAvatar?.imageUrl || avatarSrc;
+              }
 
               return (
                 <div key={i} className="min-w-[300px] bg-white p-8 rounded-2xl shadow-sm border border-primary/5 relative">
