@@ -12,7 +12,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="relative w-10 h-10 rounded-full bg-white/10 flex items-center justify-center border-2 border-white/20 transition-transform group-hover:scale-105">
+              <div className="relative w-10 h-10 rounded-full bg-primary flex items-center justify-center border-2 border-white shadow-sm overflow-hidden transition-transform group-hover:scale-105">
                 <svg
                   viewBox="0 0 24 24"
                   className="w-8 h-8 drop-shadow-sm"
@@ -21,10 +21,10 @@ export const Footer = () => {
                 >
                   <path
                     d="M12 2L14.81 8.62L22 9.24L16.5 13.97L18.18 21L12 17.27L5.82 21L7.5 13.97L2 9.24L9.19 8.62L12 2Z"
-                    className="fill-white stroke-primary stroke-[0.75]"
+                    className="fill-primary stroke-white stroke-[1]"
                     strokeLinejoin="round"
                   />
-                  <circle cx="17.5" cy="7.5" r="1.2" fill="#4F96CC" className="opacity-80" />
+                  <circle cx="17.5" cy="7.5" r="1.2" fill="white" className="opacity-90" />
                 </svg>
               </div>
               <span className="text-2xl font-headline font-bold">Mundo Cristão Kids</span>
