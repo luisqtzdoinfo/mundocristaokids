@@ -2,28 +2,18 @@
 "use client";
 
 import React from 'react';
-import Image from 'next/image';
-import { MessageCircle, Instagram, Facebook, Mail } from 'lucide-react';
+import { MessageCircle, Instagram, Facebook, Mail, Star } from 'lucide-react';
 import Link from 'next/link';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const Footer = () => {
-  const logoImg = PlaceHolderImages.find(img => img.id === 'logo-image');
-
   return (
     <footer className="bg-primary text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 relative rounded-full overflow-hidden border-2 border-white/20 bg-white/10">
-                <Image 
-                  src={logoImg?.imageUrl || ''} 
-                  alt="Logo" 
-                  fill 
-                  className="object-cover"
-                  data-ai-hint={logoImg?.imageHint}
-                />
+              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center border-2 border-white/20">
+                <Star className="w-6 h-6 text-white fill-white" />
               </div>
               <span className="text-2xl font-headline font-bold">Mundo Cristão Kids</span>
             </Link>
