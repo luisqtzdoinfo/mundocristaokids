@@ -2,7 +2,7 @@
 "use client";
 
 import React from 'react';
-import { MessageCircle, Instagram, Facebook, Mail, Star } from 'lucide-react';
+import { MessageCircle, Instagram, Facebook, Mail } from 'lucide-react';
 import Link from 'next/link';
 
 export const Footer = () => {
@@ -11,9 +11,21 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="space-y-6">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center border-2 border-white/20">
-                <Star className="w-6 h-6 text-white fill-white" />
+            <Link href="/" className="flex items-center gap-2 group">
+              <div className="relative w-10 h-10 rounded-full bg-white/10 flex items-center justify-center border-2 border-white/20 transition-transform group-hover:scale-105">
+                <svg
+                  viewBox="0 0 24 24"
+                  className="w-8 h-8 drop-shadow-sm"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2L14.81 8.62L22 9.24L16.5 13.97L18.18 21L12 17.27L5.82 21L7.5 13.97L2 9.24L9.19 8.62L12 2Z"
+                    className="fill-white stroke-primary stroke-[0.75]"
+                    strokeLinejoin="round"
+                  />
+                  <circle cx="17.5" cy="7.5" r="1.2" fill="#4F96CC" className="opacity-80" />
+                </svg>
               </div>
               <span className="text-2xl font-headline font-bold">Mundo Cristão Kids</span>
             </Link>
@@ -57,7 +69,7 @@ export const Footer = () => {
 
           <div className="space-y-6">
             <h4 className="text-lg font-bold mb-6">Newsletter</h4>
-            <p className="text-sm text-white/70">Receba dicas de education cristã e novos lançamentos.</p>
+            <p className="text-sm text-white/70">Receba dicas de educação cristã e novos lançamentos.</p>
             <div className="flex gap-2">
               <input 
                 type="email" 
