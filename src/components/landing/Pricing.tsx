@@ -73,21 +73,21 @@ export const Pricing = () => {
                   <Gift className="w-5 h-5 text-secondary shrink-0" />
                   <div className="text-white text-sm">
                     <p className="font-bold">BÔNUS 1: 5 Vídeos de Histórias Bíblicas</p>
-                    <p className="text-xs opacity-70">Valor original: R$ 97,00</p>
+                    <p className="text-xs opacity-70 line-through">97,00</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <Gift className="w-5 h-5 text-secondary shrink-0" />
                   <div className="text-white text-sm">
                     <p className="font-bold">BÔNUS 2: 18 Versículos Ilustrados</p>
-                    <p className="text-xs opacity-70">Valor original: R$ 39,00</p>
+                    <p className="text-xs opacity-70 line-through">39,00</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <Gift className="w-5 h-5 text-secondary shrink-0" />
                   <div className="text-white text-sm">
                     <p className="font-bold">BÔNUS 3: Calendário Bíblico Semanal</p>
-                    <p className="text-xs opacity-70">Valor original: R$ 35,00</p>
+                    <p className="text-xs opacity-70 line-through">35,00</p>
                   </div>
                 </li>
               </ul>
