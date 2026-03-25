@@ -32,7 +32,7 @@ export const Header = () => {
           <Link href="#beneficios" className="text-sm font-medium hover:text-primary transition-colors">Benefícios</Link>
           <Link href="#faq" className="text-sm font-medium hover:text-primary transition-colors">Dúvidas</Link>
           <Button asChild className="gap-2 bg-gradient-to-tr from-[#f09433] via-[#e6683c] via-[#dc2743] via-[#cc2366] to-[#bc1888] text-white hover:opacity-90 border-none">
-            <Link href="https://www.instagram.com/codigodomilionarioo?igsh=cG92Mmc4Z3hodDI2&utm_source=qr" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.instagram.com/mundocristaokids2026?igsh=cG92Mmc4Z3hodDI2&utm_source=qr" target="_blank" rel="noopener noreferrer">
               <Instagram className="w-4 h-4" />
               Instagram
             </Link>
