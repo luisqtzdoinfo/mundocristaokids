@@ -2,7 +2,7 @@
 "use client";
 
 import React from 'react';
-import { Check, ShieldCheck, CreditCard, Clock, Gift, ChevronRight } from 'lucide-react';
+import { Check, ShieldCheck, CreditCard, Clock, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
@@ -47,8 +47,10 @@ export const Pricing = () => {
               ))}
             </ul>
 
-            <Button size="lg" className="w-full bg-primary hover:bg-primary/90 rounded-xl h-14 font-bold">
-              QUERO O PACOTE BÁSICO
+            <Button asChild size="lg" className="w-full bg-primary hover:bg-primary/90 rounded-xl h-14 font-bold">
+              <a href="https://ggcheckout.app/checkout/v3/PqrVqpAqobexihpIfnmT" target="_blank" rel="noopener noreferrer">
+                QUERO O PACOTE BÁSICO
+              </a>
             </Button>
           </div>
 
