@@ -93,8 +93,10 @@ export const Pricing = () => {
               </ul>
             </div>
 
-            <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground rounded-xl h-14 font-bold shadow-lg">
-              QUERO O PACOTE PREMIUM
+            <Button asChild size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground rounded-xl h-14 font-bold shadow-lg">
+              <a href="https://ggcheckout.app/checkout/v3/HLKBRosd1dXgDQGxtaTu" target="_blank" rel="noopener noreferrer">
+                QUERO O PACOTE PREMIUM
+              </a>
             </Button>
           </div>
         </div>
